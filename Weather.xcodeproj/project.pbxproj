@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150218CD224FBD8A009444C3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150218CC224FBD8A009444C3 /* TableViewCell.swift */; };
+		150218CF224FDFF6009444C3 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150218CE224FDFF6009444C3 /* ImageService.swift */; };
+		150218D2224FEB47009444C3 /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150218D0224FEB47009444C3 /* HourlyWeatherCollectionViewCell.swift */; };
+		150218D3224FEB47009444C3 /* HourlyWeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150218D1224FEB47009444C3 /* HourlyWeatherCollectionViewCell.xib */; };
 		159666A5224E888000529378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159666A4224E888000529378 /* AppDelegate.swift */; };
 		159666A7224E888000529378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159666A6224E888000529378 /* ViewController.swift */; };
 		159666AA224E888000529378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159666A8224E888000529378 /* Main.storyboard */; };
 		159666AC224E888300529378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159666AB224E888300529378 /* Assets.xcassets */; };
 		159666AF224E888300529378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159666AD224E888300529378 /* LaunchScreen.storyboard */; };
+		159666B7224E9DA400529378 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159666B6224E9DA400529378 /* Model.swift */; };
+		15B296DA22511F78000841D3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B296D922511F78000841D3 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150218CC224FBD8A009444C3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		150218CE224FDFF6009444C3 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		150218D0224FEB47009444C3 /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		150218D1224FEB47009444C3 /* HourlyWeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyWeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		159666A1224E888000529378 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159666A4224E888000529378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		159666A6224E888000529378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		159666AB224E888300529378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		159666AE224E888300529378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		159666B0224E888300529378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		159666B6224E9DA400529378 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		15B296D922511F78000841D3 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				159666A3224E888000529378 /* Weather */,
+				159666AB224E888300529378 /* Assets.xcassets */,
+				159666AD224E888300529378 /* LaunchScreen.storyboard */,
+				159666B0224E888300529378 /* Info.plist */,
 				159666A2224E888000529378 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +70,56 @@
 			isa = PBXGroup;
 			children = (
 				159666A4224E888000529378 /* AppDelegate.swift */,
-				159666A6224E888000529378 /* ViewController.swift */,
-				159666A8224E888000529378 /* Main.storyboard */,
-				159666AB224E888300529378 /* Assets.xcassets */,
-				159666AD224E888300529378 /* LaunchScreen.storyboard */,
-				159666B0224E888300529378 /* Info.plist */,
+				15DF72D62271E67100C1CADA /* Controllers */,
+				15DF72DA2271E6E300C1CADA /* Views */,
+				15DF72D92271E6D100C1CADA /* Model */,
+				15DF72D72271E68A00C1CADA /* Custom Cells */,
+				15DF72D82271E6BA00C1CADA /* Utility */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		15DF72D62271E67100C1CADA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				159666A6224E888000529378 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15DF72D72271E68A00C1CADA /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				150218D0224FEB47009444C3 /* HourlyWeatherCollectionViewCell.swift */,
+				150218CC224FBD8A009444C3 /* TableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		15DF72D82271E6BA00C1CADA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				150218CE224FDFF6009444C3 /* ImageService.swift */,
+				15B296D922511F78000841D3 /* Network.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		15DF72D92271E6D100C1CADA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				159666B6224E9DA400529378 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15DF72DA2271E6E300C1CADA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				159666A8224E888000529378 /* Main.storyboard */,
+				150218D1224FEB47009444C3 /* HourlyWeatherCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +182,7 @@
 			files = (
 				159666AF224E888300529378 /* LaunchScreen.storyboard in Resources */,
 				159666AC224E888300529378 /* Assets.xcassets in Resources */,
+				150218D3224FEB47009444C3 /* HourlyWeatherCollectionViewCell.xib in Resources */,
 				159666AA224E888000529378 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150218CD224FBD8A009444C3 /* TableViewCell.swift in Sources */,
+				159666B7224E9DA400529378 /* Model.swift in Sources */,
+				150218D2224FEB47009444C3 /* HourlyWeatherCollectionViewCell.swift in Sources */,
 				159666A7224E888000529378 /* ViewController.swift in Sources */,
 				159666A5224E888000529378 /* AppDelegate.swift in Sources */,
+				15B296DA22511F78000841D3 /* Network.swift in Sources */,
+				150218CF224FDFF6009444C3 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3L55M2378;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bilalnawaz.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3L55M2378;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bilalnawaz.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hourlyWeatherCell" id="gTV-IL-0wX" customClass="HourlyWeatherCollectionViewCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6l-Qz-Vdj">
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="142"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-07-wLo">
+                                <rect key="frame" x="49.5" y="33" width="35" height="76"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDk-ta-tx7">
+                                        <rect key="frame" x="7" y="0.0" width="21.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="10"/>
+                                        <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partly-cloudy-night" translatesAutoresizingMaskIntoConstraints="NO" id="iuW-IU-mNG">
+                                        <rect key="frame" x="0.0" y="28" width="35" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="cQZ-2C-vVK"/>
+                                            <constraint firstAttribute="width" constant="35" id="p3I-MH-WuW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- °" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHF-gm-fGz">
+                                        <rect key="frame" x="8" y="56" width="19" height="20"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pzd-07-wLo" firstAttribute="centerY" secondItem="B6l-Qz-Vdj" secondAttribute="centerY" id="iln-tW-pEU"/>
+                            <constraint firstItem="pzd-07-wLo" firstAttribute="centerX" secondItem="B6l-Qz-Vdj" secondAttribute="centerX" id="sPU-zx-3Rw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="B6l-Qz-Vdj" secondAttribute="trailing" id="0fP-N4-o2I"/>
+                <constraint firstItem="B6l-Qz-Vdj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zsw-YQ-WAl"/>
+                <constraint firstAttribute="bottom" secondItem="B6l-Qz-Vdj" secondAttribute="bottom" id="fu2-Ds-PgP"/>
+                <constraint firstItem="B6l-Qz-Vdj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nlK-xk-pxC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="134" height="142"/>
+            <connections>
+                <outlet property="currentTemperatureLabel" destination="tHF-gm-fGz" id="iVj-kY-3Jx"/>
+                <outlet property="timeLabel" destination="QDk-ta-tx7" id="k2p-mu-3KM"/>
+                <outlet property="weatherConditionImageView" destination="iuW-IU-mNG" id="Zdj-Su-Ksn"/>
+            </connections>
+            <point key="canvasLocation" x="-174.40000000000001" y="72.863568215892059"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="partly-cloudy-night" width="252" height="252"/>
+    </resources>
+</document>
