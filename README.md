@@ -6,4 +6,6 @@ weather app.
 
 It provides hourly, daily and 7-day weather forecasts using DarkSky Api.
 
-![Design](https://ucc54be8e220e1de4bed32bbee44.previews.dropboxusercontent.com/p/thumb/AAahJMX6rdj7HbFtntbGhMrCfjAK7lncSUiUxllpgY07xQx1G_PeiCFEQqbF6XPCvrR61HDhvK9d1UmB61wHXplTHXLyKS-wJ-Yhjayvhg8pXdM61xi8Olvax1p3rKGHNWs24zgwlo7442CVl6PU56BQ4c_fuwwSbVGQ2aQoFNTCK0LtQNUdwHznJWaxEG3_HZzCF9BAPl6xLIP3T9u5rKjV2VfQuh3YhtbXwB9HViZyYHBfofKnyde3Tv-5LcfoK_3lk14qfOGc1Kv1tZQ9J84OU9xL_6NieHnxf09rCrMysaEPMPEWy-l9B5n7r4I31eyD4GZ-LaMF5yS7Qe22rqpNO2_5pvCxv5XUoFilGREC2t1a0qYgzIAb3o8BNIvTEh4/p.png?size_mode=5)
+### Screenshot
+
+<img src="https://user-images.githubusercontent.com/42183565/56756068-61894c80-67aa-11e9-9d5d-f640a532756a.PNG" width="180" height="400">
